@@ -1,0 +1,49 @@
+{
+  "name": "backend_elevenia_jubelio",
+  "version": "1.0.0",
+  "description": "jubelio technical test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --inspect --exec babel-node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "backend",
+    "elevania"
+  ],
+  "author": "hlmifzi",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^18.3.2",
+    "@hapi/joi": "^15.1.1",
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "core-js": "^3.2.1",
+    "hapi-axios": "^1.0.0",
+    "hapi-cors": "^1.0.3",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^7.12.1",
+    "sequelize": "^5.17.2",
+    "tape": "^4.11.0",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "nodemon": "^1.19.1"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hlmifzi/tech-test-jubelio-be-hapijs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hlmifzi/tech-test-jubelio-be-hapijs/issues"
+  },
+  "homepage": "https://github.com/hlmifzi/tech-test-jubelio-be-hapijs#readme"
+}

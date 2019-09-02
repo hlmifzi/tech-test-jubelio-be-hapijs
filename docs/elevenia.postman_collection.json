@@ -1,0 +1,140 @@
+{
+	"variables": [],
+	"info": {
+		"name": "elevenia",
+		"_postman_id": "316d7bd8-04ba-195d-a15d-10d2b2b091db",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "elevenia-get-product",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:3001/getProductFromElevenia/26682888",
+					"request": {
+						"url": "http://localhost:3001/getProduct",
+						"method": "GET",
+						"header": [
+							{
+								"key": "openapikey",
+								"value": "721407f393e84a28593374cc2b347a98",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://api.elevenia.co.id/rest/prodservices/product/listing?page=2",
+					"request": {
+						"url": {
+							"raw": "http://api.elevenia.co.id/rest/prodservices/product/listing?page=2",
+							"protocol": "http",
+							"host": [
+								"api",
+								"elevenia",
+								"co",
+								"id"
+							],
+							"path": [
+								"rest",
+								"prodservices",
+								"product",
+								"listing"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "openapikey",
+								"value": "721407f393e84a28593374cc2b347a98",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:3001/updateProduct",
+					"request": {
+						"url": "http://localhost:3001/updateProduct/36",
+						"method": "POST",
+						"header": [
+							{
+								"key": "openapikey",
+								"value": "721407f393e84a28593374cc2b347a98",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"prdnm\":\"tes edit\",\n\t\"SKU\":\"SKU\",\n\t\"prdImg01\":\"IMAGE\",\n\t\"htmlDetail\":\"DETAIL\",\n\t\"Selprc\":100009,\n\t\"is_active\":\"N\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/getProduct",
+					"request": {
+						"url": "http://localhost:3001/getProduct",
+						"method": "GET",
+						"header": [
+							{
+								"key": "openapikey",
+								"value": "721407f393e84a28593374cc2b347a98",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/getProductDetail/20",
+					"request": {
+						"url": "http://localhost:3001/getProductDetail/20",
+						"method": "GET",
+						"header": [
+							{
+								"key": "openapikey",
+								"value": "721407f393e84a28593374cc2b347a98",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
