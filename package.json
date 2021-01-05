@@ -17,7 +17,7 @@
   "dependencies": {
     "@hapi/hapi": "^18.3.2",
     "@hapi/joi": "^15.1.1",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "core-js": "^3.2.1",
     "hapi-axios": "^1.0.0",
